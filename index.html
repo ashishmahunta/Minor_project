@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+<style>
+    *{
+        margin: 1px;
+        padding: 1px;
+        box-sizing: border-box;
+        font-family:  Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient( 130deg,yellow,green, rgba(239, 6, 45, 0.936));
+        color: violet;
+        display: grid;
+        place-items: center;
+    }
+    .container{
+        width: 80%;
+        max-width: 850px;
+        padding: 40px;
+        text-align: center;
+    }
+    .container h1{
+        font-size: 40px;
+        margin-bottom: 45px;
+        text-decoration: underline;
+        text-underline-offset: 11px;
+    }
+    .container .question{
+        font-size: 30px;
+        margin-top: 25px;
+        color: aqua;
+
+    }
+    .container .choices{
+        margin-top: 20px;
+    }
+
+    
+    /*.choices{
+        background-color: burlywood;
+        /*padding: 10px;*/
+        /*border-radius: 20px;
+        border: 2px solid 
+        text-align: left;
+        width: 60%;
+        cursor: pointer;
+    
+    }*/
+    .choice
+    {  background-color: #eee;
+        margin-top: 10px;
+        font-size: 20px;
+      color: black;
+      width: 60%;
+      border-radius: 8px;
+      text-align: left;
+      cursor: pointer;
+    }
+    .choice:hover{
+        background-color:rgb(191, 8, 8);
+    }
+.container .btn{
+    /*position: relative;
+    right: 109px;*/
+    display: block;
+    justify-items: center;
+    align-items: center;
+}
+    .btn{
+        width: 50%;
+        font-size: 20px;
+        padding: 12px 20px;
+        /*margin: 20px auto 0 auto ;*/
+        margin: 20px;
+        background-color: orchid;
+        color: black;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color:yellow ;
+    }
+     .Choice.selected{
+        background-color:rgb(21, 255, 0);
+        color: rgb(239, 159, 10);
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h1> Let's play a Quiz Game</h1>
+            <div class="question"></div>
+            <div class="choices"></div>
+            <button class="btn nextBtn">Next</button>
+
+        </div>
+    
+  
+    <script src="index.js"></script>
+</body>
+
+</html>
